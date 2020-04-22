@@ -7,6 +7,7 @@ T-Watch K210简介
 1.描述
 ==================
 T-Watch K210是一款基于K210的可编程手表套件，由三块底板及屏幕组成。
+
 您可以通过Arduino或MicroPython对T-Watch K210进行编程。
 
 2.硬件参数
@@ -244,7 +245,7 @@ T-Watch K210是一款基于K210的可编程手表套件，由三块底板及屏�
      - 描述
    * - GPIO31
      - I2C
-     - MPU6050_SDA
+     - MPU_SDA
    * - GPIO30
      - I2C
-     - MPU6050_SCL
+     - MPU_SCL
