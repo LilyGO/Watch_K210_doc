@@ -83,53 +83,72 @@ T-Watch Standard是一款基于K210的可编程手表套件，由Core PCB和Stan
 
 2.1 屏幕
 --------------
-=============== ======  ====================================  
- K210            属性      描述
-=============== ======  ====================================
- GPIO36           CS      TFT_CS
- GPIO38           DC      TFT_DC
- GPIO37           RST     TFT_RST
- GPIO39           WR      TFT_WR
- GPIO17           BL      TFT_BL
-=============== ======  ==================================== 
+.. list-table:: 
+   :widths: 15 10 20
+   :header-rows: 1
+
+   * - K210 
+     - 属性
+     - 描述
+   * - GPIO36
+     - SPI
+     - TFT_CS
+   * - GPIO38
+     - SPI
+     - TFT_DC
+   * - GPIO37
+     - SPI
+     - TFT_RST
+   * - GPIO39
+     - SPI
+     - TFT_WR
+   * - GPIO17
+     - BL
+     - TFT_BL
 
 2.2 触摸
 --------------
-=============== ======  ====================================  
- K210            属性       描述
-=============== ======  ====================================
- GPIO31           I2C    Touch_SDA
- GPIO30           I2C    Touch_SCL
-=============== ======  ====================================
+
+.. list-table:: 
+   :widths: 15 10 20
+   :header-rows: 1
+
+   * - K210 
+     - 属性
+     - 描述
+   * - GPIO31
+     - I2C
+     - Touch_SDA
+   * - GPIO30
+     - I2C
+     - Touch_SCL
 
 2.2 TF卡
 --------------
-=============== ======  ====================================  
- K210            属性     描述
-=============== ======  ====================================
- GPIO29          SPI      TF_CS
- GPIO28          SPI      TF_MOSI
- GPIO27          SPI      TF_MISO
- GPIO26          SPI      TF_SCLK
-=============== ======  ====================================
 
+.. list-table:: 
+   :widths: 15 10 20
+   :header-rows: 1
+
+   * - K210 
+     - 属性
+     - 描述
+   * - GPIO29
+     - SPI
+     - TF_CS
+   * - GPIO28
+     - SPI
+     - TF_MOSI
+   * - GPIO27
+     - SPI
+     - TF_MISO
+   * - GPIO26
+     - SPI
+     - TF_SCLK
+ 
 2.3 摄像头OV2640
 --------------
-========== ======  ============
- K210       属性     描述
-========== ======  ============
- GPIO42    RST      DVP_RST
- GPIO43    VYNC     DVP_VYNC
- GPIO44    PWDN      DVP_PWDN
- GPIO45    HYNC      DVP_HYNC
- GPIO46    XCLK      DVP_XCLK
- GPIO47    PCLK      DVP_PCLK
- GPIO40    SDA       DVP_SDA
- GPIO41    SCL       DVP_SCL
-========== ======  ============
 
-摄像头OV2640
---------------
 .. list-table:: 
    :widths: 15 10 15
    :header-rows: 1
@@ -138,59 +157,119 @@ T-Watch Standard是一款基于K210的可编程手表套件，由Core PCB和Stan
      - 属性
      - 描述
    * - GPIO42
-     - RST
+     - SPI
      - DVP_RST
-   * - Crunchy Frog
-     - 1.49
-     - If ?
-   * - Gannet Ripple
-     - 1.99
-     - On a stick!
+   * - GPIO43
+     - SPI
+     - DVP_VYNC
+   * - GPIO44
+     - SPI
+     - DVP_PWDN
+   * - GPIO45
+     - SPI
+     - DVP_HYNC
+   * - GPIO46
+     - SPI
+     - DVP_XCLK
+   * - GPIO47
+     - SPI
+     - DVP_PCLK
+   * - GPIO40
+     - SPI
+     - DVP_SDA
+   * - GPIO41
+     - SPI
+     - DVP_SCL
 
 2.4 麦克风MSM261S
 ------------------
-=============== ======  ====================================  
- K210            属性     描述
-=============== ======  ====================================
- GPIO18           I2S      MIC_BCK
- GPIO19           I2S      MIC_WS
- GPIO20           I2S      MIC_DAT
-=============== ======  ====================================
 
+.. list-table:: 
+   :widths: 15 10 20
+   :header-rows: 1
+
+   * - K210 
+     - 属性
+     - 描述
+   * - GPIO18
+     - I2S
+     - MIC_BCK
+   * - GPIO19
+     - I2S
+     - MIC_WS
+   * - GPIO20
+     - I2S
+     - MIC_DAT
 2.5 ESP32
 --------------
-=============== ======  ====================================  
- K210            属性       描述
-=============== ======  ====================================
- GPIO06           UART    ESP32_TX
- GPIO07           UART    ESP32_RX
-=============== ======  ====================================
+
+.. list-table:: 
+   :widths: 15 10 20
+   :header-rows: 1
+
+   * - K210 
+     - 属性
+     - 描述
+   * - GPIO06
+     - UART
+     - ESP32_TX
+   * - GPIO07
+     - UART
+     - ESP32_RX
 
 2.6 扬声器Max98357A
 ----------------------
-=============== ======  ====================================  
- K210            属性     描述
-=============== ======  ====================================
- GPIO35           I2S      MAX_BCK
- GPIO33           I2S      MAX_WS
- GPIO34           I2S      MAX_DAT
-=============== ======  ====================================
+
+.. list-table:: 
+   :widths: 15 10 20
+   :header-rows: 1
+
+   * - K210 
+     - 属性
+     - 描述
+   * - GPIO35
+     - I2S
+     - MAX_BCK
+   * - GPIO33
+     - I2S
+     - MAX_WS
+   * - GPIO34
+     - I2S
+     - MAX_DAT
 
 2.7 AXP202
 --------------
-=============== ======  ====================================  
- K210            属性       描述
-=============== ======  ====================================
- GPIO31           I2C    AXP_SDA
- GPIO30           I2C    AXP_SCL
- GPIO32           INT    AXP_IRQ
-=============== ======  ====================================
+
+.. list-table:: 
+   :widths: 15 10 20
+   :header-rows: 1
+
+   * - K210 
+     - 属性
+     - 描述
+   * - GPIO31
+     - I2C
+     - Touch_SDA
+   * - GPIO30
+     - I2C
+     - Touch_SCL
+   * - GPIO32
+     - INT
+     - AXP_IRQ
 
 2.8 MPU6050
 --------------
-=============== ======  ====================================  
- K210            属性       描述
-=============== ======  ====================================
- GPIO31           I2C    MPU6050_SDA
- GPIO30           I2C    MPU6050_SCL
-=============== ======  ====================================
+
+.. list-table:: 
+   :widths: 15 10 20
+   :header-rows: 1
+
+   * - K210 
+     - 属性
+     - 描述
+   * - GPIO31
+     - I2C
+     - MPU6050_SDA
+   * - GPIO30
+     - I2C
+     - MPU6050_SDA
