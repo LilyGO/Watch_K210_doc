@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-T-Watch 编程文档
-=================
+T-Watch K210电子文档
+=====================
 
 T-Watch-K210 可编程智能手表是深圳芯元电子最新推出的一款自主开发产品。
 
