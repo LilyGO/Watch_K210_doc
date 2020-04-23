@@ -23,65 +23,73 @@
 1. 环境搭建
 ==============
 
-安装Flash Download Tools 
-++++++++++++++++++++++++
-
-
-乐鑫烧录下载工具ESP Flash Download Tool: :download:`Download <https://www.espressif.com/sites/default/files/tools/flash_download_tools_v3.6.5_0.zip>`
-  
-
-.. figure:: ../_static/firmware2.png 
-   :scale: 100
-   :align: center
-
-
-安装CP2104驱动
-++++++++++++++++
+1.1 安装CP2104驱动
+++++++++++++++++++++++
 
 * :download:`CP2104-Win10 <https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip>`
 
-下载固件
-++++++++++++++++
 
-安装固件可到 :ref:`资源下载/固件<firmware_download>` 中获取。
-
-.. _get-stared-config:
-
-2. 下载设置
-==============
-.. figure:: ../_static/firmware3.png 
+1.2 安装下载工具IDE
++++++++++++++++++++
+.. figure:: ../_static/gui1.jpg
    :scale: 100
    :align: center
 
-``ESP Flash Tool`` 设置操作见下：
-
-* ``COM``：烧录设备端口选择，如只有一个设备，可直接选择。
-* ``BAUD``：下载波特率，建议921600
-* ``SPI SPEED``：40MHz
-* ``SPI MODE``：DIO
-* ``FLASH SIZE``：128Mbit
+下载安装包kflash_GUI: :download:`点击此处下载 <../download/kflash_gui_v1.5.5.zip>`
 
 
-============================= =========================================================   
- 文件                          地址                                                   
-============================= =========================================================    
- boot_app0.bin                    0xe000
- bootloader_dio_80m.bin           0x1000
- T-Watch.ino.partitions.bin       0x8000
- T-Watch.ino.bin                  0x10000
-============================= =========================================================   
+解压缩后 打开文件夹
+
+.. figure:: ../_static/cx.gif
+   :scale: 90
+   :align: left
+
+.. _get-stared-config:
+
+2. 参数介绍
+==============
+.. figure:: ../_static/ggu.jpg 
+   :scale: 100
+   :align: center
+
+``kflash_GUI`` 设置操作见下：
+
+* ``开发板``：选择Auto，自动配置
+* ``下载到``：选择Flash,下载到Flash中
+* ``端口``：选择自动生成的COM口
+* ``波特率``：选择1500000
+* ``速度模式``：选择低速
+
+.. important::
+    如果读取不到COM口，请检验驱动是否安装
 
 
 .. _get-stared-download:
 
-3. 下载固件
+3. 上传固件
 ==============
-.. figure:: ../_static/flash_firmware1.gif
+
+3.1 下载出厂固件
+++++++++++++++++++++++
+首先下载K210固件: :download:`点击此处下载 <../download/maixpy_v0.5.0-42-g458ed4ela-twatch.bin>`
+
+也可到 :ref:`资源下载/固件<firmware_download>` 中获取。
+
+3.2 烧录设置
+++++++++++++++++++++++
+.. figure:: ../_static/ggu.jpg 
    :scale: 100
    :align: center
 
 .. important::
     请等待界面左下角显示Finish（完成）时，再关闭软件。
+
+3.3 开启烧录
+++++++++++++++++++++++
+.. figure:: ../_static/zz.gif
+   :scale: 100
+   :align: center
+
 
 .. _get-stared-use:
 
