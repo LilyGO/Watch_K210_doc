@@ -189,18 +189,18 @@ T-Watch K210是一款基于K210的可编程手表套件，由三块底板及屏�
    * - K210 
      - 属性
      - 描述
-   * - GPIO5
-     - SPI
-     - SPI_CS
-   * - GPIO14
-     - SPI
-     - SPI_MOSI
-   * - GPIO23
-     - SPI
-     - SPI_MISO
-   * - GPIO18
-     - SPI
-     - SPI_SCLK
+   * - GPIO25
+     - SPI-CS
+     - ESP32-IO05
+   * - GPIO28
+     - SPI-MOSI
+     - ESP32-IO14
+   * - GPIO26
+     - SPI-MISO
+     - ESP32-IO23
+   * - GPIO27
+     - SPI-SCLK
+     - ESP32-IO18
 
 3.7 扬声器Max98357A
 ----------------------
